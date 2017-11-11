@@ -44,7 +44,7 @@ a:focus {
   outline: none;
 }
 img {  
-    max-width: 100%;∏
+    max-width: 100%;
 }
 .row {
   padding-bottom: 70px;
@@ -679,7 +679,11 @@ img {
   color: #008A7D;
 }
 #why-chose {
-  background: url('../img/background/bg-2.jpg') center center no-repeat;
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, black,rgb(51, 51, 51)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, black,rgb(51, 51, 51)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, black,rgb(51, 51, 51)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, black,rgb(51, 51, 51)); /* Standard syntax */
   color: #fff;
   background-size: cover;
   overflow: hidden;
@@ -776,7 +780,11 @@ img {
   border-bottom-left-radius: 0px;
 }
 #why-chose1 {
-  background: url('../img/background/bg-2.jpg') center center no-repeat;
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, black,rgb(51, 51, 51)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, black,rgb(51, 51, 51)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, black,rgb(51, 51, 51)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, black,rgb(51, 51, 51)); /* Standard syntax */
   color: #fff;
   background-size: cover;
   overflow: hidden;
@@ -873,7 +881,11 @@ img {
   border-bottom-left-radius: 0px;
 }
 #why-chose2 {
-  background: url('../img/background/bg-2.jpg') center center no-repeat;
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right top,rgb(51, 51, 51),black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom left, rgb(51, 51, 51),black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom left, rgb(51, 51, 51),black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom left, rgb(51, 51, 51),black); /* Standard syntax */
   color: #fff;
   background-size: cover;
   overflow: hidden;
