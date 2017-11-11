@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "technoscape2018",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
