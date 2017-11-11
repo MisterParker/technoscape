@@ -1,0 +1,52 @@
+[debug] [2017-11-11T05:50:35.605Z] ----------------------------------------------------------------------
+[debug] [2017-11-11T05:50:35.608Z] Command:       /usr/local/Cellar/node/8.9.1/bin/node /usr/local/bin/firebase use --add
+[debug] [2017-11-11T05:50:35.608Z] CLI Version:   3.15.0
+[debug] [2017-11-11T05:50:35.608Z] Platform:      darwin
+[debug] [2017-11-11T05:50:35.608Z] Node Version:  v8.9.1
+[debug] [2017-11-11T05:50:35.609Z] Time:          Sat Nov 11 2017 11:20:35 GMT+0530 (IST)
+[debug] [2017-11-11T05:50:35.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-11T05:50:35.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-11-11T05:50:35.623Z] > authorizing via signed-in user
+[debug] [2017-11-11T05:50:35.626Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sat Nov 11 2017 11:20:35 GMT+0530 (IST)
+[debug] [2017-11-11T05:50:37.300Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-11T05:50:57.885Z] TypeError: Cannot read property 'short' of undefined
+    at Prompt.render (/usr/local/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/list.js:94:69)
+    at Prompt.onSubmit (/usr/local/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/list.js:116:8)
+    at AnonymousObserver.Rx.AnonymousObserver.AnonymousObserver.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1535:12)
+    at AnonymousObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at AnonymousObserver.tryCatcher (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:63:31)
+    at AutoDetachObserverPrototype.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:5782:51)
+    at AutoDetachObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at AnonymousObserver._onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:4234:13)
+    at AnonymousObserver.Rx.AnonymousObserver.AnonymousObserver.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1535:12)
+    at AnonymousObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-11-11T05:51:22.931Z] ----------------------------------------------------------------------
+[debug] [2017-11-11T05:51:22.934Z] Command:       /usr/local/Cellar/node/8.9.1/bin/node /usr/local/bin/firebase use --add
+[debug] [2017-11-11T05:51:22.934Z] CLI Version:   3.15.0
+[debug] [2017-11-11T05:51:22.934Z] Platform:      darwin
+[debug] [2017-11-11T05:51:22.934Z] Node Version:  v8.9.1
+[debug] [2017-11-11T05:51:22.935Z] Time:          Sat Nov 11 2017 11:21:22 GMT+0530 (IST)
+[debug] [2017-11-11T05:51:22.935Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-11T05:51:22.948Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-11-11T05:51:22.948Z] > authorizing via signed-in user
+[debug] [2017-11-11T05:51:22.951Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sat Nov 11 2017 11:21:22 GMT+0530 (IST)
+[debug] [2017-11-11T05:51:24.314Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-11T05:51:28.441Z] TypeError: Cannot read property 'short' of undefined
+    at Prompt.render (/usr/local/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/list.js:94:69)
+    at Prompt.onSubmit (/usr/local/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/list.js:116:8)
+    at AnonymousObserver.Rx.AnonymousObserver.AnonymousObserver.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1535:12)
+    at AnonymousObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at AnonymousObserver.tryCatcher (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:63:31)
+    at AutoDetachObserverPrototype.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:5782:51)
+    at AutoDetachObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at AnonymousObserver._onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:4234:13)
+    at AnonymousObserver.Rx.AnonymousObserver.AnonymousObserver.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1535:12)
+    at AnonymousObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+[error] 
+[error] Error: An unexpected error has occurred.
