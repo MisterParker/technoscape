@@ -1,8 +1,20 @@
 <!doctype html>
 <html lang="en">
 
+<!-- Redesigned by Prakhar Lohiya -->
+<!-- Technoscape 2018 @VIT University -->
 
 <head>
+	<style type="text/css">
+		#load{
+			width:100%;
+			height:100%;
+			position:fixed;
+			z-index:9999;
+			background:url("assets/extras/gif/739.gif") no-repeat center center  #0BAFA0;
+
+		}
+	</style>
 	<meta charset="UTF-8">
 	<title>Technoscape 2018</title>
 	<link rel="apple-touch-icon" sizes="57x57" href="http://chennai.vit.ac.in/files/technoscape2016/apple-icon-57x57.png">
@@ -94,6 +106,8 @@ $(document).ready(function(){
 	<!-- Start Body Section -->
 	<body>
 		<!-- Start Header Section -->
+		<div id="load"></div>
+		<div id="contents">
 		<header id="header">
 			<nav class="main-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200" style="height: 11.7%;">
 				<div class="container">
@@ -104,6 +118,7 @@ $(document).ready(function(){
 						<!-- logo here -->
 						
 					</div>
+
 					
 					<!-- Start Navigation Menu -->
 					<div class="collapse navbar-collapse">
@@ -2504,6 +2519,13 @@ Ph.D.</p></font>
 								<h4>fb.com/technoscape2018/</h4>
 							</div>
 						</div>
+						<div class="col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+							<div class="contact-item">
+								<a href="https://github.com/MisterParker" target="_blank"><i class="fa fa-github"></i></a>
+							
+								<h4></h4>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2512,6 +2534,8 @@ Ph.D.</p></font>
              <div class="scroll-top" data-spy="affix" data-offset-top="300">
 			<a href="index.html#header"><i class="fa fa-angle-up"></i></a>
 		</div>
+
+	
 		<!-- Scroll End -->
 		<!-- Modal For Lecture Series-->
 		<center><div id="modallecture" class="modal" role="dialog">
@@ -2548,6 +2572,23 @@ Ph.D.</p></font>
     		</div>
 		</div></center>-->
 		<!--Modal Ends Here-->
+
+	</div>
+	<script type="text/javascript">
+		document.onreadystatechange = function () {
+			var state = document.readyState
+			if (state == 'interactive') {
+				document.getElementById('contents').style.visibility="hidden";
+			} else if (state == 'complete') {
+				setTimeout(function(){
+					document.getElementById('interactive');
+					document.getElementById('load').style.visibility="hidden";
+					document.getElementById('contents').style.visibility="visible";
+				},1000);
+			}
+			}
+	</script>
+		
 
 		<!-- Style sheet switcher start -->
 		<script src="assets/js/jquery-min.js"></script>
