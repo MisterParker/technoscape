@@ -9,7 +9,7 @@
 		#load{
 			width:100%;
 			height:100%;
-			position:fixed;35
+			position:fixed;
 			z-index:9999;
 			/*background:url("assets/extras/gif/805.gif") no-repeat center center white*/
 			/*background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)*/
@@ -297,28 +297,29 @@ $(document).ready(function(){
 		<div id="contents">
 		<header id="header">
 			<nav class="main-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200" style="height: 11.7%;">
-				<div class="container">
+				<!-- <div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 							<i class="fa fa-bars fa-lg"></i>
-						</button>
+						</button> -->
 						<!-- logo here -->
 						
-					</div>
+					<!-- </div> -->
 
 					
 					<!-- Start Navigation Menu -->
-					<div class="collapse navbar-collapse">
-				<img src="assets/img/logo%20low.png" alt="" id="techno" height="100" width="90" style="position: absolute;left:2%;top:-15%"></img><img src="assets/img/logo1.jpg" alt="" id="techno" height="45" width="60" style="position: absolute;right:2%;top:10%;"></img><img src="assets/img/logo22.jpg" alt="" id="techno" height="30" width="70" style="position: absolute;right:10%;top:20%;"></img>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+				<img src="assets/img/logo%20low.png" alt="" id="techno" height="100" width="90" style="position: absolute;left:2%;top:-15%"></img>
+				
 						<ul class="nav navbar-nav navbar-right" id="main_navigation_menu" style="position:absolute;left:12%;top:15%;" >
 
-							<li  style=""><a href="index.html#about">About Us</a></li>
+							<li  style="" class ="nav-link js-scroll-trigger color_underline" ><a href="index.html#about">About Us</a></li>
 							<li class="dropdown"><a class="dropdown-toggle" data-toggle="" href="index.html#" >Call For Papers<span class="caret"></span></a>
 								<ul class="dropdown-menu" >
-									<li><a class ="color_underline"  href="index.html#portfolio">Topics</a></li>
-									<li><a class ="color_underline" href="index.html#imp_dates" >Important Dates</a></li>
-									<li><a class ="color_underline" href="index.html#intro123" >Guidelines for Authors &nbsp;</a></li>
-									<li><a class ="color_underline" href="index.html#intro1234" >Selected Abstracts</a></li>
+									<li><a class ="nav-link js-scroll-trigger color_underline"  href="index.html#portfolio">Topics</a></li>
+									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#imp_dates" >Important Dates</a></li>
+									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#intro123" >Guidelines for Authors &nbsp;</a></li>
+									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#intro1234" >Selected Abstracts</a></li>
 								</ul>
 							</li>
 							<li class="dropdown"><a class="dropdown-toggle color_underline" data-toggle="dropdown" href="index.html#intro1">Publications<span class="caret"></span></a>		
@@ -337,7 +338,7 @@ $(document).ready(function(){
 									<li><a href="index.html#why-chose2">Advisors</a></li>
 								</ul>
 							</li>
-							<li><a href="index.html#register">Register</a></li>	
+							<li><a href="index.html#section-intro">Register</a></li>	
 							<li style=""><a href="index.html#events">Events</a></li>
 							<li><a href="index.html#intro12">Sponsors</a></li>	
 						    <li  ><a href="index.html#contact">Contact</a></li>
@@ -351,22 +352,41 @@ $(document).ready(function(){
 		<!-- End Header Section -->
 		
 		<!--Deadline Strip-->
-		<!--<div id="dstrip">
-			<marquee><span><b>At Technoscape, we believe in being &nbsp&nbspON TIME&nbsp: The complete list of selected Manuscripts is displayed under call for papers.</b></span></marquee>
-		</div>-->
+		<div id="dstrip">
+			<marquee style="position:relative;top:15%;"><b style="color:black;">NOTICE BOARD :</b><span>&nbsp;&nbsp;The last date for Abstract Submission has been extended till 30th March, 2018.</span></marquee>
+		</div>
 		<!--Deadline Strip Ends Here-->
 
 		<!-- Start Intro Section -->
-		<section id="intro" class="section-intro">
+		<!-- <section id="intro" class="section-intro">
 			<div class="overlay"><a href="index.html" class="navbar-brand" id="my_logo"></a>
 				<div class="container">
-					<div class="row">
-						<iframe src="e/index_frame.html" scrolling="no" style="position:absolute; top:3%;left:0px; right:0px; width:100%; height:100%;  z-index=3" overflow:hidden; frameBorder="0" allowtransparency="true"></iframe><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<div class="row"> -->
+						<!-- <iframe src="e/index_frame.html" scrolling="no" style="position:absolute; top:3%;left:0px; right:0px; width:100%; height:100%;  z-index=3" overflow:hidden; frameBorder="0" allowtransparency="true"></iframe><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+						
+						<!-- <div id="">
+								<video width="100%" height="200px" autoplay loop style="position:absoltue;left:0%;
+								z-index:0;
+								top:50;
+								width:100%; 
+								height:100vh;"> 
+					
+										<source src="e/technosite.mp4" type="video/mp4">
+								</video>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</div> -->
+		<!-- </section> -->
+		 <!-- video section -->
+			<video width="100%" height="100%" autoplay loop style="position:relative;left:0%;top:0%;
+					z-index:0;
+					width:100vw; 
+					height:100vh;"> 
+
+							<source src="e/technosite.mp4" type="video/mp4">
+			</video>
+			<!-- video section ends here -->
 		<!-- End Intro Section -->
 
 		<!-- Start Services Section -->
@@ -1151,13 +1171,13 @@ Ph.D.</p></font>
       </tr>
       <tr>
         <td>Abstract Submission Ends</td>
-        <td>3rd Feburary, 2018</td>
+        <td>30th March, 2018</td>
        
       </tr>
     
       <tr>
         <td>Notification of Acceptance: Abstracts</td>
-        <td>15th January, 2018</td>
+        <td>14th April, 2018</td>
         
       </tr>
     <tr>
@@ -1167,26 +1187,26 @@ Ph.D.</p></font>
       </tr>
   <tr>
         <td>Full Paper Submission Ends</td>
-        <td>31st March, 2018</td>
+        <td>30th June, 2018</td>
         
       </tr>
  
   <tr>
         <td>Early Bird Registration Begins</td>
-        <td>15th April, 2018</td>
+        <td>1st June, 2018</td>
         
       </tr>
 
 
  <tr>
         <td>Early Bird Registration Ends</td>
-        <td>30th May, 2018</td>
+        <td>1st July, 2018</td>
         
       </tr>
  <tr> 
  <td>Regular Registration Closes</td>
       
-        <td>30th July, 2018</td>
+        <td>15th August, 2018</td>
         
       </tr>
 
@@ -1659,7 +1679,7 @@ Ph.D.</p></font>
 									</div>
 									<div class="text">
 										<p>Dean<br>Distinguished Professor<br>Office of International Affairs (OIA)<br>Institute of Environment Engineering and Management<br>National Taipei University of Technology
-											<br>China</p>
+											<br>Taiwan</p>
 									</div>
 									<div class="social-icons">
 										<ul>
@@ -1761,6 +1781,57 @@ Ph.D.</p></font>
 											<ul>
 		
 												<li><a href="http://er-web.jmk.ynu.ac.jp/html/NAKAMURA_Kazuho/en.html" target="_blank"><i class="fa fa-user"></i></a></li>
+											</ul>
+										</div>
+									</div></center>
+								</div>
+							</div>
+
+							<!-- <div class="col-sm-6 wow flipInY" data-wow-offset="10" data-wow-delay="0.2s">
+								<div class="item-square">
+									<div class="face">
+										<img src="assets/img/team-member/team-04.jpg" alt="">
+										<div class="overlay"></div>
+									</div>
+									<center><div class="content" style="width:66%;">
+											<div class="title">
+													<h3>Yasushi <br><Br>Umeda</h3>
+												</div>
+												<div class="text">
+													<p>Research Associate<br>
+													Kanto Gakuin University<br>
+													Materials & Surface Engineering Research Institute<br>
+													Japan</p><br>
+												</div>
+										<div class="social-icons">
+											<ul>
+		
+												<li><a href="http://mscenter.kanto-gakuin.ac.jp/" target="_blank"><i class="fa fa-user"></i></a></li>
+											</ul>
+										</div>
+									</div></center>
+								</div>
+							</div> -->
+
+							<div class="col-sm-6 wow flipInY" data-wow-offset="10" data-wow-delay="0.2s">
+								<div class="item-square">
+									<div class="face">
+										<img src="assets/img/team-member/team-06.jpg" alt="">
+										<div class="overlay"></div>
+									</div>
+									<center><div class="content" style="width:66%;">
+											<div class="title">
+													<h3>Dr. Atsushi <br><Br>Suzuki</h3>
+												</div>
+												<div class="text">
+													<p>Professor <br>
+													Yokohama National University<br>
+													Japan</p><br>
+												</div>
+										<div class="social-icons">
+											<ul>
+		
+												<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
 											</ul>
 										</div>
 									</div></center>
@@ -2517,7 +2588,7 @@ Ph.D.</p></font>
 	<br><br><br><br><br><br>
 
 		<!-- here pud id="intro123 for previous effect and for image go to the css file" -->
-		<section class="section-intro" style="color:black;">
+		<section class="section-intro" style="color:black;" id="intro123">
 			<div class="overlay">
 				<div class="container" style="height:700px">
 					<div class="row">
@@ -2582,13 +2653,13 @@ Ph.D.</p></font>
 							<h1 class="wow fadeInUp"><span>Events</span></h1><br><Br>
 							<div id="evcontainer" class="wow fadeInUp" data-wow-delay=".7s">
 								<div class="evicon">
-									<a data-toggle="modal" data-target="#modallecture" href="index.html#"><img src="assets/img/events/lecture.png" width="30%"><br><br>
-									<span>Guest Lecture Series</span></a>
+									<a data-toggle="modal" data-target="#modallecture" href="index.html#"><img src="assets/img/events/lecture.png" width="30%" style="position:relative;left:50%;"><br><br>
+									<span style="position:relative;left:50%;">Guest Lecture Series</span></a>
 								</div>
-								<div class="evicon">
+								<!-- <div class="evicon">
 									<img src="assets/img/events/55887.png" width="30%"><br><br>
 									<span>Selfie Competition</span>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -2654,7 +2725,7 @@ Ph.D.</p></font>
 								</div>
 								
 								<br><br><br><br><br><br><br><br>Come and be a part of Technoscape<sup>18</sup>. Become a proud co-sponsor.<br><br> Contact us:  sponsors.technoscape2018@vit.ac.in<br><br><br>To download the sponsorship brochure,
-								 <a href="assets/technoscape18%20Brochure.pdf" download>'click here'</a></span></span>
+								 <a href="assets/technoscape18_brochure.pdf" download>'click here'</a></span></span>
 						</div>		
 					</div>
 				</div>
@@ -2746,7 +2817,7 @@ Ph.D.</p></font>
 		</section>
 
              <div class="scroll-top" data-spy="affix" data-offset-top="300">
-			<a href="index.html#header"><i class="fa fa-angle-up"></i></a>
+			<a href="index.html#header" ><i class="fa fa-angle-up"></i></a>
 		</div>
 
 	
@@ -2758,19 +2829,35 @@ Ph.D.</p></font>
 				<div class="modal-content">
 						<div id="lvline"></div>
 						<h1>Coming Soon!</h1>
-						<!--<div id="lhead" class="modal-title"><button type="button" class="close" data-dismiss="modal" style="right:30px;"><font size=6em color="white">&times;</font></button>GUEST LECTURE SERIES</div>
+							<!-- 1 -->
+						<div id="lhead" class="modal-title"><button type="button" class="close" data-dismiss="modal" style="right:30px;"><font size=6em color="white">&times;</font></button>GUEST LECTURE SERIES</div>
 						<div class="lrow">
 							<div id="lhline"></div>	
 							<div id="lsno" class="lcircle" style="font-size:50px;padding-top:48px;">1</div>
 							<div id="lpic" class="lcircle">
-								<img src="assets/img/TVG.jpg">
+								<img src="assets/img/events/dummyb.jpg">
 							</div>
 							<div id="ldesc">
-								<span style="font-size:18px;">Dr.Thangavelu Viruthagiri</span><br>Professor - Annamalai University
-								<br>Lecture Topic - Separation Techniques<br>Date: 15 March<sup>16</sup>
+								<span style="font-size:18px;">Dr. Rajan rathinasapabathy</span><br>Process Optimisation engineer,<br> 
+								Philips 66 California, USA<br>Date: 9 December 2017<br>
+								TOPIC : Process Water in Chemical and Allied Industries
 							</div>
 						</div>
+						<!-- 2 -->
 						<div class="lrow">
+							<div id="lhline"></div>	
+							<div id="lsno" class="lcircle" style="font-size:50px;padding-top:48px;">2</div>
+							<div id="lpic" class="lcircle">
+								<img src="assets/img/events/2.jpg">
+							</div>
+							<div id="ldesc">
+								<span style="font-size:18px;">Dr. G. Venkateshan</span><br>Scientist  E, Energy and Fresh Water Group
+								<br>National Institute of Ocean Technology <br>Date: 31 January 2018
+								<br>TOPIC : Advancements in Desalination
+							</div>
+						</div>
+						<!-- 3 -->
+						<!-- <div class="lrow">
 							<div id="lhline"></div>	
 							<div id="lsno" class="lcircle" style="font-size:50px;padding-top:48px;">2</div>
 							<div id="lpic" class="lcircle">
@@ -2781,10 +2868,10 @@ Ph.D.</p></font>
 								<br>Indian Institute of Technology Madras
 								<br>Lecture Topic - Separation Techniques<br>Date: 23 April<sup>16</sup>
 							</div>
-						</div>
+						</div> -->
     			</div>
     		</div>
-		</div></center>-->
+		</div></center>
 		<!--Modal Ends Here-->
 
 	</div>
