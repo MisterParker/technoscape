@@ -194,6 +194,22 @@
 					opacity: 0;
 				}
 			}
+				#blink{
+					-webkit-animation: blink .8s step-end infinite;
+						animation: blink .8s step-end infinite;
+						-o-animation-delay: blink .8s step-end infinite;
+						-ms-animation-delay: blink .8s step-end infinite;
+						-moz-animation-delay: blink .8s step-end infinite;
+			}
+				
+						@-webkit-keyframes blink {
+						67% { opacity: 0 }
+						}
+				
+						@keyframes blink {
+						67% { opacity: 0 }
+				}
+			}
 	</style>
 	<meta charset="UTF-8">
 	<title>Technoscape 2018</title>
@@ -308,10 +324,10 @@ $(document).ready(function(){
 
 					
 					<!-- Start Navigation Menu -->
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-				<img src="assets/img/logo%20low.png" alt="" id="techno" height="80" width="70" style="position: absolute;left:2%;top:-25%"></img>
+					<div class="collapse navbar-collapse" id="navbarResponsive" style="width:100%;">
+				<img src="assets/img/logo%20low.png" alt="" id="techno" height="80" width="70" style="position:absolute;left:2%;top:-2%"></img>
 				
-						<ul class="nav navbar-nav navbar-right" id="main_navigation_menu" style="position:absolute;left:12%;top:15%;" >
+						<ul class="nav navbar-nav navbar-right" id="main_navigation_menu" style="position:absolute;left:12%;top:15%;width:100%;" >
 
 							<li  style="" class ="nav-link js-scroll-trigger color_underline" ><a href="index.html#about">About Us</a></li>
 							<li class="dropdown"><a class="dropdown-toggle" data-toggle="" href="index.html#" >Call For Papers<span class="caret"></span></a>
@@ -325,7 +341,8 @@ $(document).ready(function(){
 							<li class="dropdown"><a class="dropdown-toggle color_underline" data-toggle="dropdown" href="index.html#intro1">Publications<span class="caret"></span></a>		
 								<ul class="dropdown-menu">
 								<li><a class ="color_underline" href="index.html#intro1">REFFIT</a></li>
-								<li><a class ="color_underline" href="index.html#intro1">Current Science</a></li>	
+								<li><a class ="color_underline" href="index.html#intro1">Current Science</a></li>
+								<li><a class ="color_underline" href="index.html#intro1">H2Open</a></li>	
 								</ul>
 							</li>
 		
@@ -365,13 +382,13 @@ $(document).ready(function(){
 						<iframe src="e/index_frame.html" scrolling="no" style="position:absolute; top:3%;left:0px; right:0px; width:100%; height:100%;  z-index=3" overflow:hidden; frameBorder="0" allowtransparency="true"></iframe><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
 						
 						<div>
-								<video autoplay loop style="position:absoltue;left:0%;
+								<video autoplay loop muted style="position:absoltue;left:0%;
 								z-index:0;
 								top:0;
 								width:100%; 
 								height:120vh;"> 
 					
-										<source src="e/technosite.mp4" type="video/mp4">
+										<source src="e/technosite.mp4" type="video/mp4" mute>
 								</video>
 						</div>
 					<!-- </div>
@@ -2676,7 +2693,9 @@ Ph.D.</p></font>
   </table><br><br>
 <h5 ><br>#Proof of active membership required
 <br><br>Note: All the above charges are inclusive of GST
-</h5>
+</h5><br>
+<a href="http://info.vit.ac.in/conference/Technoscape_International/apply.asp" style="color:rgb(43,160,199);font-size:130%;" id="blink" target="_blank"><strong>Click here for Payment</strong></a>
+<h5>*Payment should be done only after you have been notified about the selection of your paper</h5>
 
 <br><br><br><br><br>
 </div></section>
@@ -2855,7 +2874,11 @@ Ph.D.</p></font>
 				<h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>Contact</span> Us</h1>
 					<div class="row">
 						<div class="contact-form">
-							<form action="https://docs.google.com/a/vit.ac.in/forms/d/1EK7YTCTPCuHW3fZMpoHrR0HT0U8DcnpG9jDFvuCDXjs/formResponse" method="POST"  target="_self" onsubmit="" role="form">
+								<div class="cognito" style="position:relative;left:18%;">
+										<script src="https://services.cognitoforms.com/s/Mi1WJktlPEKSbLFdgzfBUg"></script>
+										<script>Cognito.load("forms", { id: "1" });</script>
+										</div>
+							<!-- <form action="https://docs.google.com/a/vit.ac.in/forms/d/1EK7YTCTPCuHW3fZMpoHrR0HT0U8DcnpG9jDFvuCDXjs/formResponse" method="POST"  target="_self" onsubmit="" role="form">
 								<div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
 										<div class="controls">
 											<input class="contact_input" type="text" name="entry.1995662602" placeholder="Name">
@@ -2876,7 +2899,7 @@ Ph.D.</p></font>
 								<div class="col-sm-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
 									<button type="submit" id="submit" class="btn btn-common">Send</button>
 								</div>
-							</form>
+							</form> -->
 						</div>
 					</div>
 				</div>	
