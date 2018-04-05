@@ -209,7 +209,35 @@
 						@keyframes blink {
 						67% { opacity: 0 }
 				}
-			}
+					/* alert bar */
+
+					.alert {
+						padding: 20px;
+						color: white;
+						margin-bottom: 15px;
+					}
+
+					.alert a{
+						color:rgb(76,172,160);
+					}
+					/* rgb(76,172,160) */
+
+					/* The close button */
+					.closebtn {
+						margin-left: 15px;
+						color: white;
+						font-weight: bold;
+						font-size: 22px;
+						line-height: 20px;
+						cursor: pointer;
+						transition: 0.3s;
+					}
+
+					/* When moving the mouse over the close button */
+					.closebtn:hover {
+						color: black;
+					}
+				}
 			
 	</style>
 	<meta charset="UTF-8">
@@ -344,9 +372,12 @@ $(document).ready(function(){
 							</li>
 							<li class="dropdown"><a class="dropdown-toggle color_underline" data-toggle="dropdown" href="index.html#intro1">Publications<span class="caret"></span></a>		
 								<ul class="dropdown-menu">
-								<li><a class ="color_underline" href="index.html#intro1">REFFIT</a></li>
+								<li><a class ="color_underline" href="index.html#intro1">Environmental Chemistry Letters</a></li>	
 								<li><a class ="color_underline" href="index.html#intro1">Current Science</a></li>
 								<li><a class ="color_underline" href="index.html#intro1">H2Open</a></li>	
+								<li><a class ="color_underline" href="index.html#intro1">Environmental Chemistry for a Sustainable World</a></li>	
+								<li><a class ="color_underline" href="index.html#intro1">Sustainable Agriculture Reviews</a></li>
+								<li><a class ="color_underline" href="index.html#intro1">REFFIT</a></li>	
 								</ul>
 							</li>
 		
@@ -374,7 +405,7 @@ $(document).ready(function(){
 		
 		<!--Deadline Strip-->
 		<div id="dstrip">
-			<marquee style="position:relative;top:15%;"><b style="color:black;">NOTICE BOARD :</b><span>&nbsp;&nbsp;The last date for Abstract Submission has been extended till 30th April, 2018.</span></marquee>
+			<marquee style="position:relative;top:15%;"><b style="color:black;">NOTICE BOARD :</b><span>&nbsp;&nbsp;The last date for Abstract Submission is 30th April, 2018.</span></marquee>
 		</div>
 		<!--Deadline Strip Ends Here-->
 
@@ -387,14 +418,17 @@ $(document).ready(function(){
 						
 						<div>
 								<video autoplay loop muted style="position:absoltue;left:0%;
-								z-index:0;
+								z-index:1000000;
 								top:0;
 								width:100%; 
 								height:120vh;"> 
-					
-										<source src="e/technosite.mp4" type="video/mp4" mute>
+								
+										<source src="e/technoscapesite.mp4" type="video/mp4" mute>
 								</video>
+								
 						</div>
+
+
 					<!-- </div>
 				</div>
 			</div> -->
@@ -412,6 +446,13 @@ $(document).ready(function(){
 			</video> -->
 			<!-- video section ends here -->
 		<!-- End Intro Section -->
+		<div class="alert" style="width:45%;float:left;background-color:black;">
+			<h4 style="float:right;"><a href="index.html#section-intro">Click here for Payments</a></h4>
+		  </div>
+
+		  <div class="alert" style="width:45%;float:right;background-color:black;">
+			<a href="index.html#imp_dates"><h4>Click here for Paper Submission</h4></a>
+		  </div>
 
 		<!-- Start Services Section -->
 		<section id="services">
@@ -1864,6 +1905,59 @@ Ph.D.</p></font>
 									</div></center>
 								</div>
 							</div>
+
+							
+
+							<div class="col-sm-6 wow flipInY" data-wow-offset="10" data-wow-delay="0.2s">
+								<div class="item-square">
+									<div class="face">
+										<img src="assets/img/team-member/team-08.jpeg" alt="">
+										<div class="overlay"></div>
+									</div>
+									<center><div class="content" style="width:66%;">
+											<div class="title">
+													<h3>Mr. Bhaskar<br><Br>Nateshan</h3>
+												</div>
+												<div class="text">
+													<p>Chief Operating Officier<br>
+														Sulfindo Adiusaha<br>
+														Indonesia</p><br><br>
+												</div>
+										<div class="social-icons">
+											<ul>
+		
+												<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
+											</ul>
+										</div>
+									</div></center>
+								</div>
+							</div>
+
+							<div class="col-sm-6 wow flipInY" data-wow-offset="10" data-wow-delay="0.2s">
+								<div class="item-square">
+									<div class="face">
+										<img src="assets/img/team-member/dummyb.jpg" alt="">
+										<div class="overlay"></div>
+									</div>
+									<center><div class="content" style="width:66%;">
+											<div class="title">
+												<h3>Mr. K Sadanand<br><Br></h3>
+												</div>
+												<div class="text">
+													<p>Solenis Technologies<br>
+														Jakarta<br>
+														Indonesia</p><br>
+												</div>
+										<div class="social-icons">
+											<ul>
+		
+												<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
+											</ul>
+										</div>
+									</div></center>
+								</div>
+							</div>
+
 					<!--<div class="col-md-4 wow flipInY" data-wow-offset="10" data-wow-delay="0.2s">
 						<div class="item-square">
 							<div class="face">
@@ -2736,21 +2830,51 @@ Ph.D.</p></font>
 		</section>
 		<section id="intro1" class="section-intro" style="padding-bottom:20px;">
 			<div class="overlay">
-				<div class="container" style="height:1250px">
+				<div class="container" style="height:2000px">
 					<div class="row">
 						<div class="main-text" style="margin-top:1px;">	
 														<h1 class="wow fadeInUp"><span style="color:black">SUPPORTING</span><span> PUBLICATIONS</span></h1><br><br>
 														<h4  class="wow fadeInUp" data-wow-delay=".7s" >All authors of the papers accepted for the conference will be given the oppurtunity to publish their work in supporting journals.<br><br>The acceptance is subject to peer review by the conference scientific committee and payment of registration fee.<br><br>The conference will be supported by the following journals:</h4><br><br>
-														<table><tr><td width=20% rowspan=2  style="padding-bottom:3%"><img src="assets/img/publications/logo1.gif" height="180" width="142"></img></td><td align="left"><h3><p>1. Resource Efficient Technologies (REFFIT)</p><br></h3></td></tr>
-														<tr>
-														<td align="justify" style="padding-bottom:3%">Resource-Efficient Technologies publishes research and review articles, short communications, commentaries, and book reviews in the ever broadening field of sustainable and resource-efficient technologies, which reduce energy and materials consumption, reduce or completely eliminate toxic waste, develop closed-loop recycling technologies with the purpose of sustainable, economically efficient and socially use of all natural resources and man-made products.<br>     For more info: <a href="http://www.journals.elsevier.com/resource-efficient-technologies/call-for-papers/technoscape-2016/" target="blank">Click here</a><br><br></td></tr>
-														<tr><td width=20% rowspan=2 style="padding-bottom:3%"><img src="assets/img/publications/logo2.png" height="180" width="142"></img></td><td align="left"><h3><p>2.Current Science<br></p></h3></td></tr>
-														<tr><td align="justify" style="padding-bottom:3%"><br>Current Science, published every fortnight by the Association, in collaboration with the Indian Academy of Sciences, is the leading interdisciplinary science journal from India.<br>
+														<table>
+
+															<tr><td width=20% rowspan=2  style="padding-bottom:3%"><a href="https://link.springer.com/journal/10311"><img src="assets/img/publications/logo1.jpg" height="180" width="142"></img></a></td><td align="left"><h3><p>1. Environmental Chemistry Letters</p><br></h3></td></tr>
+															<tr><td align="justify" style="padding-bottom:3%">Environmental Chemistry Letters covers the interfaces of geology, chemistry, physics and biology. Articles published here are of high importance to the study of natural and engineered environments. 
+																The journal publishes original and review articles of outstanding significance on such topics as the characterization of natural and affected environments; behavior, prevention, treatment and control of mineral, organic and radioactive pollutants; 
+																interfacial studies involving media such as soil, sediment, water, air, organism, and food; green chemistry, environmentally friendly synthetic pathways, and alternative fuels; ecotoxicology and risk assessment; environmental processes and modelling; 
+																environmental technologies, remediation and control; environmental analytical chemistry, biomolecular tools and tracers.<br>     
+														For more info: <a href="https://link.springer.com/journal/10311" target="blank">Click here</a><br><br>
+														</td></tr>
+
+															<tr><td width=20% rowspan=2 style="padding-bottom:3%"><a href="http://www.currentscience.ac.in/php/about.php"><img src="assets/img/publications/logo2.jpg" height="180" width="142"></img></a></td><td align="left"><h3><p>2.Current Science<br></p></h3></td></tr>
+															<tr><td align="justify" style="padding-bottom:3%"><br>Current Science, published every fortnight by the Association, in collaboration with the Indian Academy of Sciences, is the leading interdisciplinary science journal from India.<br>
  														For more info: <a href="http://www.currentscience.ac.in/php/about.php" target="blank">Click here</a> </p><br><br>
- 														</td></tr>
-														<tr><td width=20% rowspan=2><img src="assets/img/publications/logo3.jpg" height="180" width="142"></img></td><td align="left" valign="top"><h3>3. H2Open Journal<br><p></p><br></h3></td></tr>
-														<tr><td align="justify">The H2Open Journal is an open access journal that publishes original, peer-reviewed, internationally relevant articles covering all aspects of 21st century water research: fundamental science, application of science and technology and impact of societal and political and economic factors. It considers research papers, critical reviews and short communications; multi-disciplinary articles are encouraged.
-														<br>For more info: <a href="http://iwaponline.com/content/h2open" target="blank">Click here</a><br><br></td></tr>
+														 </td></tr>
+														 
+														<tr><td width=20% rowspan=2><a href="http://iwaponline.com/content/h2open"><img src="assets/img/publications/logo3.jpg" height="180" width="142"></img></a></td><td align="left" valign="top"><h3>3. H2Open Journal<br><p></p><br></h3></td></tr>
+														<tr><td align="justify">The H2Open Journal is an open access journal that publishes original, peer-reviewed, internationally relevant articles covering all aspects of 21st century water research: fundamental science, application of science and technology
+															 and impact of societal and political and economic factors. It considers research papers, critical reviews and short communications; multi-disciplinary articles are encouraged.<br>
+														For more info: <a href="http://iwaponline.com/content/h2open" target="blank">Click here</a><br><br>
+														</td></tr>
+
+														<tr><td width=20% rowspan=2  style="padding-bottom:3%"><a href="http://www.springer.com/series/114801"><img src="assets/img/publications/logo4.jpg" height="180" width="142"></img></a></td><td align="left"><h3><p>4. Environmental Chemistry for a Sustainable World</p><br></h3></td></tr>
+														<tr><td align="justify" style="padding-bottom:3%">Environmental chemistry is a fast developing science aimed at deciphering fundamental mechanisms ruling the behaviour of pollutants in ecosystems. Applying this knowledge to current environmental issues leads
+															to the remediation of environmental media, and to new, low energy, low emission, sustainable processes. The topics that would be covered in this series, but not limited to, are major achievements of environmental chemistry for sustainable development such
+															 as nanotech applications; biofuels, solar and alternative energies; pollutants in air, water, soil and food; greenhouse gases; radioactive pollutants; endocrine disruptors and other pharmaceuticals; pollutant archives; ecotoxicology and health risk; pollutant
+															  remediation; geoengineering; green chemistry; contributions bridging unexpectedly far disciplines such as environmental chemistry and social sciences; and participatory research with end-users.<br>     
+													For more info: <a href="http://www.springer.com/series/11480" target="blank">Click here</a><br><br>
+													</td></tr>
+
+														<tr><td width=20% rowspan=2 style="padding-bottom:3%"><a href="http://www.springer.com/series/8380"><img src="assets/img/publications/logo5.jpg" height="180" width="142"></img></a></td><td align="left"><h3><p>5. Sustainable Agriculture Reviews<br></p></h3></td></tr>
+														<tr><td align="justify" style="padding-bottom:3%"><br>Sustainable agriculture is a rapidly growing field aiming at producing food and energy in a sustainable way for humans and their children. Sustainable agriculture is a discipline that addresses current issues such
+															 as climate change, increasing food and fuel prices, poor-nation starvation, rich-nation obesity, water pollution, soil erosion, fertility loss, pest control, and biodiversity depletion..<br>
+													 For more info: <a href="http://www.springer.com/series/8380" target="blank">Click here</a> </p><br><br>
+													 </td></tr>
+													 
+													 <tr><td width=20% rowspan=2  style="padding-bottom:3%"><a href="https://link.springer.com/journal/10311"><img src="assets/img/publications/logo6.jpg" height="180" width="142"></img></a></td><td align="left"><h3><p>6. Resource Efficient Technologies (REFFIT)</p><br></h3></td></tr>
+													 <tr><td align="justify" style="padding-bottom:3%">Resource-Efficient Technologies publishes research and review articles, short communications, commentaries, and book reviews in the ever broadening field of sustainable and resource-efficient technologies, which 
+														 reduce energy and materials consumption, reduce or completely eliminate toxic waste, develop closed-loop recycling technologies with the purpose of sustainable, economically efficient and socially use of all natural resources and man-made products.<br>     
+												 For more info: <a href="http://www.journals.elsevier.com/resource-efficient-technologies/call-for-papers/technoscape-2016/" target="blank">Click here</a><br><br>
+													
 													</table><br><br><br>
 													<p style="color:black;font-size:280%;"><em>"More Journal Publications are in the pipeline"<em></p>
 														<br><br>
@@ -2857,11 +2981,9 @@ Ph.D.</p></font>
 				<div class="container">
 				<h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>Contact</span> Us</h1>
 					<div class="row">
-						<div class="contact-form">
-								<div class="cognito" style="position:relative;left:18%;">
-										<script src="https://services.cognitoforms.com/s/Mi1WJktlPEKSbLFdgzfBUg"></script>
-										<script>Cognito.load("forms", { id: "1" });</script>
-										</div>
+						<div class="contact-form" style="position:relative;left:20%;">
+							<iframe src="https://services.cognitoforms.com/f/Mi1WJktlPEKSbLFdgzfBUg?id=1" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="534" width="100%"></iframe>
+							<script src="https://services.cognitoforms.com/scripts/embed.js"></script>
 							<!-- <form action="https://docs.google.com/a/vit.ac.in/forms/d/1EK7YTCTPCuHW3fZMpoHrR0HT0U8DcnpG9jDFvuCDXjs/formResponse" method="POST"  target="_self" onsubmit="" role="form">
 								<div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
 										<div class="controls">
