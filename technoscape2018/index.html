@@ -237,6 +237,46 @@
 					.closebtn:hover {
 						color: black;
 					}
+
+					#cfunding1{
+						z-index: 10000000;
+						position: fixed;
+						top: 34%;
+						float:left;
+						background-color: white;
+						border-style: solid;
+						border-width: .3em;
+						border-color: rgb(76,172,160);
+						padding: .8%;
+						font-size:130%;
+						font-weight: 500;
+						/* text-shadow: 2px 2px 8px rgb(76,172,160); */
+					}
+
+					#cfunding1 a{
+						color:black;
+						text-decoration: none;
+					}
+
+					#floatbox2{
+						z-index: 10000001;
+						position: fixed;
+						top: 18%;
+						float: left;
+						background-color: white;
+						border-style: solid;
+						border-width: .3em;
+						border-color: rgb(76,172,160);
+						padding: .8%;
+						font-size:130%;
+						font-weight: 500;
+						/* text-shadow: 2px 2px 8px rgb(76,172,160); */
+					}
+
+					#floatbox2 a{
+						color:rgb(76,172,160);
+						text-decoration: none;
+					}
 				}
 			
 	</style>
@@ -257,6 +297,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="../../manifest.json.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -323,9 +364,8 @@ $(document).ready(function(){
    $("#change12").hide();
     
 });
+		
 </script>
-	<style>
-	</style>
 </head>
 
 	<!-- Start Body Section -->
@@ -364,6 +404,7 @@ $(document).ready(function(){
 									<li><a class ="nav-link js-scroll-trigger color_underline"  href="index.html#portfolio">Topics</a></li>
 									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#imp_dates" >Important Dates</a></li>
 									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#intro123" >Guidelines for Authors &nbsp;</a></li>
+									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#intro123" >Poster Format</a></li>
 									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#intro1234" >Selected Abstracts</a></li>
 									<li><a class ="nav-link js-scroll-trigger color_underline" href="index.html#imp_dates" >Full Paper Submission</a></li>
 
@@ -391,7 +432,14 @@ $(document).ready(function(){
 							<li><a href="index.html#section-intro">Registration</a></li>	
 							<li style=""><a href="index.html#events">Events</a></li>
 							<li><a href="index.html#intro12">Sponsors</a></li>	
-						    <li  ><a href="index.html#contact">Contact</a></li>
+							<li  ><a href="index.html#contact">Contact</a></li>
+							
+							<!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="index.html#">Venue<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">How to Reach Vellore?</a></li>
+									<li><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2018-08-09&aDateRange%5Bdep%5D=2018-08-10&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iPathId=480053&aGeoCode%5Blat%5D=12.9717796&aGeoCode%5Blng%5D=79.15890420000005&iGeoDistanceItem=0&sGeoAddressString=Vellore&aCategoryRange=0%2C1%2C2%2C3%2C4%2C5&aOverallLiking=1%2C2%2C3%2C4%2C5&sOrderBy=distance%20asc&bTopDealsOnly=false&iRoomType=7&cpt=48005303&iIncludeAll=0&iViewType=0&bIsSeoPage=false&bIsSitemap=false&">Hotel Nearby</a></li>
+								</ul>
+							</li> -->
 							
 						</ul>
 					</div>
@@ -401,6 +449,20 @@ $(document).ready(function(){
 		</header>
 		<!-- End Header Section -->
 		
+		<!-- CROWD FUNIDNG	 -->
+		<div id="cfunding1">
+			<a href="http://ket.to/crowdfundingtechnoscape18" target="_blank" class="blink" id="ctext">SUPPORT US</a>
+		</div>
+
+		<!-- How to reach Vellore	 -->
+
+		<!-- <div id="floatbox2">
+			<ul>
+			<li><a href="" target="_blank">How to reach Vellore?</a></li><br>
+			<li><a href="" target="_blank">Hotels in Vellore.</a></li>
+			</ul>
+		</div> -->
+
 		<!--Deadline Strip-->
 		<div id="dstrip">
 			<marquee style="position:relative;top:15%;"><span>The list of selected abstracts has been uploaded.  Technoscape is proud to announce its collaboration with American Society of Civil Engineering (ASCE) as a publishing partner.</span> || <b>Early Bird</b> registration closes by 5th August, 2018. || <em>No Spot Registration</em></marquee>
@@ -1705,11 +1767,11 @@ Ph.D.</p></font>
 									<div class="text">
 										<p>Professor<br>Division of Material Science & Chemical Engineering<br>Yokohama National University
 											<br>JAPAN</p>
-											<br>
+											<br><br>
 									</div>
 									<div class="social-icons">
 										<ul>
-											<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
+											<li><a href="http://er-web.jmk.ynu.ac.jp/html/KAMINOYAMA_Meguru/en.html" target="_blank"><i class="fa fa-user"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1731,7 +1793,7 @@ Ph.D.</p></font>
 											</div>
 											<div class="text">
 												<p>Dean<br>Distinguished Professor<br>Institute of Environment Engineering and Management<br>National Taipei University of Technology
-													<br>TAIWAN</p>
+													<br>TAIWAN</p><br>
 											</div>
 											<div class="social-icons">
 												<ul>
@@ -1758,12 +1820,12 @@ Ph.D.</p></font>
 											<div class="text">
 												<p>IWA YWP Polish Chapter Chair<br>
 												Gdansk University of Technology<br>
-												POLAND</p><BR>
+												POLAND</p><BR><br><br>
 											</div>
 									<div class="social-icons">
 										<ul>
 
-											<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
+											<li><a href="assets/cv/Jakub.PDF" target="_blank"><i class="fa fa-user"></i></a></li>
 										</ul>
 									</div>
 								</div></center>
@@ -1782,7 +1844,7 @@ Ph.D.</p></font>
 										</div>
 										<div class="text">
 											<p>Professor<br>Chemical Engineering<br>
-											Universiti Teknologi Petronas<br> MALAYSIA</p>
+											Universiti Teknologi Petronas<br> MALAYSIA</p><br><br>
 										</div>
 									<div class="social-icons">
 										<ul>
@@ -1806,7 +1868,7 @@ Ph.D.</p></font>
 								
 									</div>
 									<div class="text">
-										<p>Professor <br>Yokohama National University<br>JAPAN</p>
+										<p>Professor <br>Yokohama National University<br>JAPAN</p><br><br><Br>
 									</div>
 									<div class="social-icons">
 										<ul>
@@ -1831,12 +1893,12 @@ Ph.D.</p></font>
 											<div class="text">
 												<p>Chief Operating Officier<br>
 													Sulfindo Adiusaha<br>
-													INDONESIA</p>
+													INDONESIA</p><br><br><br>
 											</div>
 									<div class="social-icons">
 										<ul>
 	
-											<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
+											<li><a href="assets/cv/Bhaskar.pdf" target="_blank"><i class="fa fa-user"></i></a></li>
 										</ul>
 									</div>
 								</div></center>
@@ -1857,7 +1919,7 @@ Ph.D.</p></font>
 											<div class="text">
 												<p>Chief Scientist <br>
 												Yokohama National University<br>
-												JAPAN</p><br>
+												JAPAN</p><br><br><br>
 											</div>
 									<div class="social-icons">
 										<ul>
@@ -1885,7 +1947,7 @@ Ph.D.</p></font>
 										<p>Professor<br>    
 											Department  of  Marine  Environmental  Engineering<br>
 											National  Kaohsiung  Marine  University<br>
-											Kaohsiung,TAIWAN
+											Kaohsiung,TAIWAN<br><Br><br>
 									</div>
 									<div class="social-icons">
 										<ul>
@@ -1937,8 +1999,8 @@ Ph.D.</p></font>
 												<div class="text">
 													<p>Chairman<br>
 														Center for Earth Sciences (CEaS)<br>
-														Indian Institute of Science, Bangalore<br>
-														INDIA</p>
+														Indian Institute of Science<br>
+														INDIA</p><br><Br>
 												</div>
 										<div class="social-icons">
 											<ul>
@@ -1961,9 +2023,9 @@ Ph.D.</p></font>
 												<h3>Mr. K Sadanand</h3>
 												</div>
 												<div class="text">
-													<p>Solenis Technologies<br>
-														Jakarta<br>
-														INDONESIA</p><br>
+													<p>Regional Sales Director <br>
+														South East Asia <br>Solenis Inc Industrial Water technologies Division<br>
+														INDONESIA</p><br><br>
 												</div>
 										<div class="social-icons">
 											<ul>
@@ -1989,12 +2051,12 @@ Ph.D.</p></font>
 													<p>Associate Professor<br>
 														Department od Chemical Engineering<br>
 														IIT Bombay,<br>
-														INDIA</p>
+														INDIA</p><br><br>
 												</div>
 										<div class="social-icons">
 											<ul>
 		
-												<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
+												<li><a href="https://www.che.iitb.ac.in/online/faculty/yogendra-shastri" target="_blank"><i class="fa fa-user"></i></a></li>
 											</ul>
 										</div>
 									</div></center>
@@ -2013,12 +2075,12 @@ Ph.D.</p></font>
 												</div>
 												<div class="text">
 													<p>India Representative<br>
-														United Nations Industrial Development Organization (UNIDO)</p><br>
+														United Nations Industrial Development Organization (UNIDO)</p><br><br><br>
 												</div>
 										<div class="social-icons">
 											<ul>
 		
-												<li><a href="#" target="_blank"><i class="fa fa-user"></i></a></li>
+												<li><a href="r.vanberkel@unido.org" target="_blank"><i class="fa fa-user"></i></a></li>
 											</ul>
 										</div>
 									</div></center>
@@ -2039,7 +2101,7 @@ Ph.D.</p></font>
 													<p>Professor <br>
 													Yokohama National University<br>
 													Japan</p><br>
-												</div>
+												</div>	
 										<div class="social-icons">
 											<ul>
 		
@@ -2258,7 +2320,7 @@ Ph.D.</p></font>
 												<a href="#" target="blank">	<i class="fa fa-graduation-cap"></i></a>
 											</span>
 											<div class="content">
-												<h4 style="font-size:1.1em;"><br>Dr. S.  Narayanan</h4>
+												<h4 style="font-size:1.3em;"><br>Dr. S.  Narayanan</h4>
 												   <p style="font-size:0.95em;">Pro-Vice Chancellor</p>
 											</div>
 										</div>
@@ -2597,10 +2659,10 @@ Ph.D.</p></font>
         <th>Category
 </th>
   <th>Early Bird 
-<!-- <br>(On or before 20th August, 2016) -->
+<br>(On or before 5th August, 2018)
 </th>
         <th>Regular
-<!-- <br>(On or before 21st September, 2016)</th> -->
+<br>(On or before 25th August, 2018)</th>
       </tr>
     </thead>
     <tbody>
@@ -2725,8 +2787,8 @@ Ph.D.</p></font>
 								<br><br>Kindly follow the template of Technoscape<sup>18</sup> Conference available in the link below. <br><br><br>Contact us: authors.technoscape2018@vit.ac.in</span></span>
 								<br><br>
 								<a href="Abstract_Format.doc" download>'click here'</a> to download template for Abstract Submission</p>
-								<br>
-						 		<p><a href="Full-Paper-Template.docx" download>'click here'</a> to download Full Paper template</p>
+								 <p><a href="Full-Paper-Template.docx" download>'click here'</a> to download Full Paper template</p>
+								 <p><a href="poster_format.pdf">'click here'</a> to download Poster Format</p>
 						 </div>
 						<br><br><br>
 					</div>
